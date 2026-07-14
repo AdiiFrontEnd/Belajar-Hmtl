@@ -17,7 +17,7 @@
 <br>
 
 
-3. Heading
+## Heading
 - Heading Adalah Elemen Html Yang Digunakan Untuk Membuat Judul Dan Sub Judul
 - Maksud nya Sub Judul Dan Judul Adalah Seperti Ini
 
@@ -43,7 +43,8 @@
 <br>
 <br>
 
-4.Paragraf Adalah sekumpulan kalimat yang ngebahas satu ide/topik, terus dipisahin dari kumpulan kalimat lain (paragraf lain) pake jarak atau baris baru.
+## Paragraf
+- Paragraf Adalah sekumpulan kalimat yang ngebahas satu ide/topik, terus dipisahin dari kumpulan kalimat lain (paragraf lain) pake jarak atau baris baru.
 - ```<p>``` Untuk Membuat Sekumpulan Teks Atau Kalimat
 - ```<hr>``` Untuk Membuat Garis Pisah
 - ```<br>``` Untuk Membuat Baris Baru
@@ -70,7 +71,9 @@ ga
 
 <br>
 
-5.```formatting``` di HTML itu cara lo ngasih "gaya" atau penekanan khusus ke teks, biar teksnya nggak flat-flat aja. Jadi ini beda sama heading atau paragraf yang lebih ke struktur — formatting ini lebih ke "bagian teks ini gw mau bikin beda".
+
+## Formating
+```formatting``` di HTML itu cara lo ngasih "gaya" atau penekanan khusus ke teks, biar teksnya nggak flat-flat aja. Jadi ini beda sama heading atau paragraf yang lebih ke struktur — formatting ini lebih ke "bagian teks ini gw mau bikin beda".
 
 <br>
 
@@ -115,4 +118,123 @@ ga
 - ``` <blockquote> ``` -> Secara Visual Akan Menambahkan Tab Pada Paragraf Atau pun Heading
 - ``` <q> ``` -> Secara Visual Akan Menambahkan Tanda Kutip Pada Teks ```"```
 - ``` <abbr> ``` Secara Visual Akan Menambahkan Sebuah Teks Ketika Di Hover
-- ```<address> ``` Secara Visual Akan Menambahkan
+- ```<address> ``` Secara Visual Akan Membuat Font Menjadi Italic<address> Alamat </address>
+- ``` <cite>``` Secara Visual Akan Membuat Font Menjadi Italic<cite> Sumber </cite>
+
+
+
+## Link
+- link Adalah Sebuah Elemen Yang Berisi Url Atau Alamat Atau Resource , Yang Terkandung Dalam Isi ```<a href="#">Isi Ini</a>```
+
+#### Cara Bikinnya 
+- ```<a>``` Anchor Sebuah Elemen Yang Bisa Diklik
+- ``` href="" ``` Adalah Sebuah Atribut Wajib Isinya Alamat ,Tujuan(Url Atau Path) Ini Bisa Diartikan Sebagai Target Tujuan.
+
+
+#### Atribut ```href=""``` bisa Mengarahkan Dengan Cara Berikut
+
+#### 1.Link Ke Website Luar (Bukan Local)
+
+```
+<a href="https://www.baidu.com">Baidu</a>
+```
+#### 2.Link Ke Halaman Lain Local
+
+```
+<a href="halaman.html">Home</a>
+```
+#### 3. Link Mengarahkan Ke Bagian Tertentu (Misal ke H1)
+```
+<a href="#elemen1">Ke Elemen 1</a>
+
+
+<h1 id="elemen1">Elemen 1</h1>
+```
+
+#### 4.Mengarahkan Ke Email, Pake : mailto:
+
+```
+<a href="mailto:aini@example.com">Kirim Email</a>
+```
+#### 5.Mengarahkan Ke No Telp , Pake tel:
+
+```
+<a href="tel:+62822167899">No Telp Gw</a>
+```
+
+### Atribut Lain Yang Berguna ```Support Atribut ```
+
+#### Target
+- Target = "_blank" -> ```Buka Tab Baru```
+- Target = "_self" -> ```Buka  Di Tab Yang Sama```
+- Target = "_Parent" -> ```Buka Tab Yang Parent```
+
+#### Download
+- Bikin Link JAdi Trigger Download Bukan Navigasi Halaman
+
+```
+<a href="file.pdf" download>Download Pdf</a>
+
+Or
+
+<a href="file.pdf" download="nama.pdf"> Pdf Donwload </a>
+```
+
+## Image 
+Image adalah Sebuah elemen Untuk Menampilkan Sebuah Gambar DI Halaman Html
+
+#### Note Img Itu Self Closing Jadi Ga Punya Closing Tag
+
+- img Punya Atribut Wajib Yaitu ```Src=""``` Atau ```Source```
+- src Adalah Sebuah Atribut Yang Menyediakan Url Atau Path Tempat Gambar Yang Ingin Ditampilkan
+
+### Cara Memakai Atribut Src Sebagai Berikut
+
+#### 1.Kalo Di Satu Folder Yang Sama
+
+```
+<img src="gambar.jpg">
+```
+#### 2.Kalo Beda Folder 
+
+```
+<img src="src/gambar.jpg>
+```
+#### 3.Ini Dari Website Luar Bukan Local
+
+```
+<img src="https://unsplash.com/coder">
+```
+
+### Atribut Pendukung Nya Sebagai Berikut
+Ada Atribut Pendukung Untuk Membuat elemen Image Mendapat Kemampuan ```Pada Load Imagenya```
+
+
+- #### Alt = Teks Alternatif Ketika Image Gagal Load
+
+
+
+
+## Favicon
+Favicon Adalah Sebuah Icon Kecil Muncul Di Tab Browser . Biasanya  
+Logo Mini Situs 
+
+<img src="image.png">
+
+#### Cara Mengisi Favicon Pada Tab Adalah Sebagai Berikut
+```
+<head>
+   <link rel="icon" href="image.png">
+</head>
+```
+
+## Title 
+Tittle Adalah Sebuah Teks Yang Berada Di Samping Ikon Kecil ```Favicon```
+
+#### Cara Membuat 
+
+```
+<head>
+    <title>Ini Judul</title>
+</head>
+```
