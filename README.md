@@ -113,4 +113,6 @@ ga
 <br>
 
 - ``` <blockquote> ``` -> Secara Visual Akan Menambahkan Tab Pada Paragraf Atau pun Heading
-- 
+- ``` <q> ``` -> Secara Visual Akan Menambahkan Tanda Kutip Pada Teks ```"```
+- ``` <abbr> ``` Secara Visual Akan Menambahkan Sebuah Teks Ketika Di Hover
+- ```<address> ``` Secara Visual Akan Menambahkan
