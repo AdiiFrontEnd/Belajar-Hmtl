@@ -243,3 +243,5 @@ Tittle Adalah Sebuah Teks Yang Berada Di Samping Ikon Kecil ```Favicon```
 
 
 ## Table
+Table Adalah Sebuah Elemen Untuk Membuat Susunan Informasi Yang Dipisahkan Oleh Baris Dan Kolom
+
