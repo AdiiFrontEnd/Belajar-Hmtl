@@ -245,3 +245,76 @@ Tittle Adalah Sebuah Teks Yang Berada Di Samping Ikon Kecil ```Favicon```
 ## Table
 Table Adalah Sebuah Elemen Untuk Membuat Susunan Informasi Yang Dipisahkan Oleh Baris Dan Kolom
 
+### Referensi :
+- ```<table>``` Tag Ini Memberi Tahu pada Html . Bahwa Saya Ingin Membuat Tabel
+- ```<tr>``` Tag Ini Untuk Membuat Baris Baru
+- ```<th>``` Tag Ini Untuk Header Table Biasanya Seperti Ini (Lebih Tebal)
+<img src="image-1.png">
+- ```<td>``` Tag Ini Untuk Kolom Table( Biasanya Berisi Data)
+- ```<caption>``` Tag Ini Untuk Menambahkan Judul Pada Tabel
+
+Coba Kita Liat Mana Itu Caption
+
+<hr>
+
+<table>
+
+ <caption>Daftar nama Siswa</caption>
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+
+<hr>
+nah Daftar Nama Siswa Adalah Caption. Biasa nya Berada Di Atas
+
+<br>
+
+- ``` <colgrup> ``` adalah elemen HTML untuk mengelompokkan kolom dalam tabel, sehingga Anda bisa menerapkan style atau properti ke beberapa kolom sekaligus tanpa harus ngasih atribut ke setiap sel satu per satu.
+
+#### Pengggambarannya :
+
+<hr>
+
+<table>
+  <colgroup>
+    <col style="background-color: white">
+    <col span="2" style="background-color: white">
+  </colgroup>
+  <tr>
+    <td>Kolom 1</td>
+    <td>Kolom 2</td>
+    <td>Kolom 3</td>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+  </tr>
+</table>
+
+
+<hr>
+
+- ```<col>``` Adalah Sebuah Elemen Untuk Menargetkan Kolom Tabel Mana yang Akan Di Styling. Penargetannya Adalah Dengan Berurutan. col ke 1 Mengatur kolom ke 1, col ke 2 Mengatur kolom Ke 2.
+- ```#``` Note Untuk Membuat Tag ```<col>``` Bisa Styling 2 Atau Lebih Kolom Sekaligus Maka Gunakan Atribut 
+```
+span="(Berapa Banyak tabel yang Mau Di Styling)"
+```
+<hr>
+
+- Contoh
+```span="2"``` Menargetkan 2 Kolom Sekaligus!!
+
