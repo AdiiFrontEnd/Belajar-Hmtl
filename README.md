@@ -318,3 +318,53 @@ span="(Berapa Banyak tabel yang Mau Di Styling)"
 - Contoh
 ```span="2"``` Menargetkan 2 Kolom Sekaligus!!
 
+- Nah Tapi Kalo Mau Lebih Terstruktur Dan Jelas Gunakan
+
+1. ```<thead>``` Untuk Membuat Header Table
+2. ```<tbody>``` Untuk Membuat Body Table
+3. ```<tfoot>``` Untuk Membuat Footer Table
+
+#### Contoh
+
+<table border="1">
+  <caption>Daftar Nilai</caption>
+  
+  <!-- Header Tabel -->
+  <thead>
+    <tr>
+      <th>Nama</th>
+      <th>Matematika</th>
+      <th>Bahasa Indonesia</th>
+    </tr>
+  </thead>
+  
+  <!-- Isi Tabel -->
+  <tbody>
+    <tr>
+      <td>Andi</td>
+      <td>85</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>Budi</td>
+      <td>78</td>
+      <td>82</td>
+    </tr>
+  </tbody>
+  
+  <!-- Footer Tabel -->
+  <tfoot>
+    <tr>
+      <td>Rata-rata</td>
+      <td>81.5</td>
+      <td>86</td>
+    </tr>
+  </tfoot>
+</table>
+
+Memang Kelihatan Sama Tapi Ini Lebih Mudah Dimengerti
+
+### Note :
+ Jadi Jika Ingin Membuat Lebih Dari 3 Baris Maka Bisa Menggunakan ```<tbody>``` Lebih Dari Satu!!
+
+ ..
