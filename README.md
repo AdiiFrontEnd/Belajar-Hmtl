@@ -375,8 +375,92 @@ Memang Kelihatan Sama Tapi Ini Lebih Mudah Dimengerti
 <br>
 
 
-## Styling Pada Table Menggunakan CSS
+# Styling Pada Table Menggunakan CSS
+Kali Ini KIta Akan Melakukan Gimana Css Merubah Bentuk Table
 
-last Commit
+
+## BORDER
+Border Adalah Sebuah Batas Yang Di Definisikan Oleh Sebuah Tag Css Yang Membuat Elemen Html Mempunyai ```Batas```
+
+### Cara Menambahkan Border Pada Tabel
+#### Output :
+
+<img src="image-2.png">
+
+<br>
+
+```
+<table id="border-1">
+  <tr>
+    <td>Kolom 1</td>
+    <td>Kolom 2</td>
+    <td>Kolom 3</td>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+  </tr>
+</table>
+<style>
+  #border-1, td {
+    border: 2px solid white;
+  }
+</style>
+```
+
+### Batas Table Double Yang Dihilangkan 
+
+Nah Supaya Border Nya ITU Gak ```Nyelimutin``` Cell Nya Atau Bordernya Kayak Gitu Maka Gunakan ```border-Collapse```
+
+#### Output
+
+<img src="image-5.png">
+
+<br>
+
+```
+  #border-1, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+  }
+```
 
 
+### Memberikan Radius Pada Border
+
+#### Output:
+<img src="image-4.png">
+
+<br>
+
+```
+  #border-1, td {
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+```
+
+### Menambahkan Style Border
+
+
+#### Output:
+
+<img src="image-6.png">
+
+```
+ th, td {
+  border-style: dotted;
+}
+```
+
+### Nilai Yang Bisa Diisi Dengan ```Border-Style```
+<img src="image-7.png">
+
+
+
+## UKURAN PADA TABLE 
+Table Bisa Diatur Ukurannya. Jika Ingin Gampang Ke Gini
+- Jika Maunya Ngatur Ukuran ```<table>``` Doang Maka Beri Dia Atribut width Atau Height
+
+![alt text](image-8.png)
