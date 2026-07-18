@@ -464,3 +464,150 @@ Table Bisa Diatur Ukurannya. Jika Ingin Gampang Ke Gini
 - Jika Maunya Ngatur Ukuran ```<table>``` Doang Maka Beri Dia Atribut width Atau Height
 
 ![alt text](image-8.png)
+
+- Jika Mau Diatur Cell Kolom/Baris Maka Syarat yang Dibutuhkan Adalah ```<table>``` Mempunyai Ukuran
+
+![alt text](image-9.png)
+
+Kode Nya Bisa Dilihat Seperti Ini
+```
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+```
+
+## Cara Membuat Table Header Mempunyai 2 Collom 
+
+#### Lihat :
+
+<table border="1px">
+  <tr>
+    <th colspan="2">Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+### Codenya Seperti Ini
+
+```
+<table border="1px">
+  <tr>
+    <th colspan="2">Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+```
+
+
+## Atribut Colspan Dan Rowspan
+Adalah sebuah Atribut Yang Membuat Sebuah ```Cell``` Menjadi Satu Kesatuan Seperti Ini. Lihat 1 Header 2 Cell
+
+### colspan
+<table border="1px">
+  <tr>
+    <th colspan="2">Firstname</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+  </tr>
+</table>
+
+### rowspan
+
+<table border="1px">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td rowspan="2">Smith</td>
+  </tr>
+  <tr>
+    <td>Jackson</td>
+  </tr>
+</table>
+
+- ColSpan Horizontal Dan Rowspan Vertical
+#### ```#``` Note colspan Dan Rowspan Hanya Akan Bekerja Dengan Baik Jika Satu Atau Dua Cell Hilang Berdasarkan Atribut Row Atau Col
+
+
+- Jika Col Maka Cell di Samping Nya Harus Dihilangkan
+- Jika Row maka Cell Di Bawah Atau Di Atas Harus dihilangkan
+
+
+
+## List 
+List Adalah Sebuah elemen Yang Mendefinisikan Sebuah List Pada Sebuah Web Seperti Ini
+
+
+- Ini List
+#### Ini Untuk Li Outputnya Pada Web Seperti Ini
+
+<ul>
+  <li> Haloo</li>
+</ul>
+
+#### Code:
+
+```
+<ul>
+  <li> Haloo</li>
+</ul>
+```
+
+#### Ini Untuk Ol Outputnya Seperti Ini
+
+<ol>
+<li>Haloo</li>
+</ol>
+
+#### Code:
+
+```
+<ol>
+<li>Haloo</li>
+</ol>
+```
+
+..
